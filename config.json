@@ -32,12 +32,12 @@
         "api": "openai-chat",
         "models": [
           {
-            "id": "deepseek/deepseek-r1-0528-qwen3-8b",
-            "name": "DeepSeek R1 0528 Qwen3 8B",
-            "reasoning": true,
+            "id": "lmstudio-community/Llama-3.2-3B-Instruct-GGUF",
+            "name": "Llama 3.2 3B Instruct",
+            "reasoning": false,
             "input": ["text"],
-            "contextWindow": 32768,
-            "maxTokens": 4096,
+            "contextWindow": 8192,
+            "maxTokens": 2048,
             "cost": {
               "input": 0,
               "output": 0,
@@ -52,7 +52,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "openai-local/deepseek/deepseek-r1-0528-qwen3-8b",
+        "primary": "openai-local/lmstudio-community/Llama-3.2-3B-Instruct-GGUF",
         "fallback": null
       },
       "workspace": "/Users/abdulmajeedalqassem/clawd",
