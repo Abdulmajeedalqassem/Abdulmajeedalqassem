@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.1.24-3",
+    "lastTouchedAt": "2026-01-28T20:20:27.133Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-01-28T18:41:37.931Z",
+    "lastRunVersion": "2026.1.24-3",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "anthropic:default": {
+        "provider": "anthropic",
+        "mode": "api_key"
+      },
+      "openai:local": {
+        "provider": "openai",
+        "mode": "api_key"
+      }
+    },
+    "order": {
+      "openai": ["openai:local"]
+    }
+  },
+  "models": {
+    "providers": {
+      "openai-local": {
+        "baseUrl": "http://127.0.0.1:1234/v1",
+        "apiKey": "sk-lm-studio",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "deepseek-r1-qwen3-8b",
+            "name": "DeepSeek R1 Qwen3 8B",
+            "reasoning": true,
+            "input": ["text"],
+            "contextWindow": 32768,
+            "maxTokens": 4096,
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openai-local/deepseek-r1-qwen3-8b"
+      },
+      "workspace": "/Users/abdulmajeedalqassem/clawd",
+      "memorySearch": {
+        "provider": "local",
+        "fallback": "local"
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto"
+  },
+  "channels": {
+    "whatsapp": {
+      "dmPolicy": "allowlist",
+      "selfChatMode": true,
+      "allowFrom": ["+966506111498"],
+      "groupPolicy": "allowlist",
+      "mediaMaxMb": 50,
+      "debounceMs": 0
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "c7c49dab078926d48d31411189be0e6431291b7c064c5fca"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "plugins": {
+    "entries": {
+      "whatsapp": {
+        "enabled": true
+      }
+    }
+  }
+}
