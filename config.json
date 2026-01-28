@@ -32,8 +32,8 @@
         "api": "openai-chat",
         "models": [
           {
-            "id": "deepseek-r1-qwen3-8b",
-            "name": "DeepSeek R1 Qwen3 8B",
+            "id": "deepseek/deepseek-r1-0528-qwen3-8b",
+            "name": "DeepSeek R1 0528 Qwen3 8B",
             "reasoning": true,
             "input": ["text"],
             "contextWindow": 32768,
@@ -52,7 +52,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "openai-local/deepseek-r1-qwen3-8b",
+        "primary": "openai-local/deepseek/deepseek-r1-0528-qwen3-8b",
         "fallback": null
       },
       "workspace": "/Users/abdulmajeedalqassem/clawd",
