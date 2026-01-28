@@ -29,7 +29,7 @@
       "openai-local": {
         "baseUrl": "http://127.0.0.1:1234/v1",
         "apiKey": "sk-lm-studio",
-        "api": "openai-completions",
+        "api": "openai-chat",
         "models": [
           {
             "id": "deepseek-r1-qwen3-8b",
@@ -52,7 +52,8 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "openai-local/deepseek-r1-qwen3-8b"
+        "primary": "openai-local/deepseek-r1-qwen3-8b",
+        "fallback": null
       },
       "workspace": "/Users/abdulmajeedalqassem/clawd",
       "memorySearch": {
