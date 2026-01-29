@@ -32,7 +32,7 @@
         "api": "openai-chat",
         "models": [
           {
-            "id": "lmstudio-community/Llama-3.2-3B-Instruct-GGUF",
+            "id": "llama-3.2-3b-instruct",
             "name": "Llama 3.2 3B Instruct",
             "reasoning": false,
             "input": ["text"],
@@ -52,7 +52,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "openai-local/lmstudio-community/Llama-3.2-3B-Instruct-GGUF",
+        "primary": "openai-local/llama-3.2-3b-instruct",
         "fallback": null
       },
       "workspace": "/Users/abdulmajeedalqassem/clawd",
