@@ -26,7 +26,7 @@
   },
   "models": {
     "providers": {
-      "openai-local": {
+      "openai-compatible": {
         "baseUrl": "http://127.0.0.1:1234/v1",
         "apiKey": "sk-lm-studio",
         "api": "openai-chat",
@@ -52,7 +52,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "openai-local/llama-3.2-3b-instruct",
+        "primary": "openai-compatible/llama-3.2-3b-instruct",
         "fallback": null
       },
       "workspace": "/Users/abdulmajeedalqassem/clawd",
