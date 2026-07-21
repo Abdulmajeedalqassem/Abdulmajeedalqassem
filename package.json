@@ -1,0 +1,24 @@
+{
+  "name": "articles-website",
+  "version": "1.0.0",
+  "description": "A bilingual (Arabic/English) static website for publishing articles.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --watch --serve",
+    "serve": "node build.mjs --serve",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "articles",
+    "blog",
+    "static-site",
+    "markdown"
+  ],
+  "author": "Abdulmajeed Alqassem",
+  "license": "MIT",
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^12.0.2"
+  }
+}
